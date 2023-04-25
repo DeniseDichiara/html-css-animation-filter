@@ -35,23 +35,90 @@
     height: 100px;
     background: red;
 }
+.ex-4-square:hover{
+    opacity: 0;
+    transition: all 1.5s;
+}
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
 }
+.ex-5-square:hover{
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    transition: all 1.5s;
+}
+.ex-5-square:active{
+    margin: 30px;
+    width: 30px;
+    height: 30px;
+}
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+}
+.ex-6-img:hover{
+    filter: grayscale(1);
+    transition: all 1.5s;
+}
+
+.ex-7-img:hover{
+    filter: grayscale(.5) sepia(.5);
+    transition: all 2s;
+}
+
+.ex-8-img:hover{
+    filter: grayscale(.5) sepia(.5);
+    border-radius: 10%;
+    transition: all 2s;
 }
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+.ex-9-img:hover{
+    filter: grayscale(.5) sepia(.5);
+    border-radius: 10%;
+    transform: scale(1.5);
+    transition: all 2s;
+}
+
 .ex-10-icon {
     font-size: 60px;
 }
+.ex-10-icon{
+    font-size: 60px;
+    animation-name: ruota;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes ruota{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+
 .ex-11-icon {
     font-size: 60px;
 }
